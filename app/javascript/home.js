@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => (
-    <div className="">
-        <h1 className="">
-            setup RoR + React project as two apps
+    <>
+        <h1 className="title-text">
+            Setup RoR + React project as a single APP
         </h1>
-        <p className="">Click the button below to view Diffrent Greetings From rails Database</p>
-        <div>
-            <Link to="/greetings" className="">Message</Link>
-        </div>
-    </div>
+        <p className="text">Click the button below to view Diffrent Greetings From rails Database</p>
+        <Link to="/greetings" className="buttons">Message</Link>
+    </>
+
+
 );
 
 export default Home;

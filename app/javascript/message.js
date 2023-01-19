@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Message = () => {
     return (
         <div className="">
-            <h1 className="">Hello</h1>
-            <Link to="/" className="">Back</Link>
+            <h1 className="title-text">Hello</h1>
+            <Link to="/" className="buttons">Back</Link>
         </div>
     )
 }

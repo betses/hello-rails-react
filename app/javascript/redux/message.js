@@ -7,7 +7,7 @@ export const addMessage = (payload) => ({
 });
 
 export const fetchData = () => async (dispatch) => {
-  await fetch('http://localhost:3000/message').then(
+  await fetch('http://127.0.0.1:5000/messages').then(
     async (result) => {
       const res = await result.json();
       dispatch(addMessage(res));

@@ -15,7 +15,6 @@ const Message = () => {
 
     return (
         <div className="">
-            <h1 className="title-text">Hello</h1>
             <p className="title-text">{message.message}</p>
             <Link to="/" className="buttons">Back</Link>
         </div>

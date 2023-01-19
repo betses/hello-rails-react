@@ -1,18 +1,19 @@
-import React from 'react';
-// import { Routes, Route, BrowserRouter } from 'react-router-dom';
-// import Home from './components/home';
-// import Message from './components/message';
+import React from 'react'
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './home';
+import Message from './message';
 
-const App = () => (
-    <div className="w-full bg-[#242424] ">
-        {/* <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/message" element={<Message />} />
-            </Routes>
-        </BrowserRouter> */}
-        <h1 className="text-5xl text-indigo-600">Hello World t these!</h1>
-    </div>
-);
+const app = () => {
+    return (
+        <div className="container">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/greetings" element={<Message />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
+}
 
-export default App;
+export default app;
